@@ -1,0 +1,8 @@
+# Run a specific test file
+python -m pytest test/com/dimcon/synthera/test_controller/test_for_missing_resource.py
+
+# Run a specific test function within a file
+python -m pytest test/com/dimcon/synthera/test_controller/test_for_missing_resource.py::test_lambda_handler_missing_resource
+
+# Run tests matching a pattern
+python -m pytest -k "missing_resource"
